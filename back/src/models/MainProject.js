@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 
-const projectSchema = new mongoose.Schema({
+const MainProjectSchema = new mongoose.Schema({
     title: {
         type: String,
         required: true
@@ -22,11 +22,13 @@ const projectSchema = new mongoose.Schema({
             type: String,
             required: true
         }
-
-     }
+    },
+    isMain: {
+        type: Boolean
+    }
     });
 
 
-const Project = mongoose.model("Project", projectSchema)
+const MainProject = mongoose.model("MainProject", MainProjectSchema)
 
-module.exports = Project;
+module.exports = MainProject;

@@ -1,0 +1,6 @@
+.secProjectsContainer {
+    flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  position: relative;
+  margin-bottom: 50px;
+}

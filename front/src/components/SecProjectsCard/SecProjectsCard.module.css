@@ -1,0 +1,56 @@
+.secProjectCard {
+  width: calc(50% - 20px); /* 50% for 2 in a row, minus a gap */
+  margin: 10px; /* Margin for the gap */
+  box-sizing: border-box; /* Include padding and border in the element's width */
+  display: inline-flex; /* Display as inline block */
+  flex-direction: column; /* Arrange items vertically */
+  align-items: center; /* Center items horizontally */
+  position: relative; /* Set position relative for video overlay */
+}
+
+.videopreview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Optional: adds a dark overlay if the video doesn't load */
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+  .secProjectCard {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+.imageContainer {
+  position: relative;
+  text-align: center;
+}
+
+.imageContainer img {
+  height: 350px;
+  width: auto;
+}
+
+.textContainer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /* Centers items vertically */
+  margin-top: 8px;
+}
+
+.videoTitle {
+  text-align: left;
+  margin: 0;
+  flex: 10;
+  font-family: "AtleHaasBold", sans-serif;
+}
+
+.videoProducer {
+  text-align: right;
+  margin: 0;
+  white-space: nowrap;
+  font-family: "AtleHaasRegular", sans-serif;
+}

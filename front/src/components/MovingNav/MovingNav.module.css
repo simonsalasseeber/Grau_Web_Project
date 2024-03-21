@@ -1,0 +1,48 @@
+.navContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 80px;
+    padding: 10 20px; /* Add a solid background color if needed */
+    z-index: 1000; /* High z-index for the navbar to be on top */
+    box-sizing: border-box;
+    
+
+}
+
+.logoSection {
+     width: 80px;
+     height: 80px;
+     margin-top: 40px;
+    margin-left: 40px;
+    padding: 1px;
+    }
+
+    .socialMedia a {
+        margin: 0 10px;
+        
+      }
+      
+      .socialMedia img {
+        width: 30px; /* Adjust size as needed */
+        height: 30px; /* Adjust size as needed */
+        filter: invert(1) brightness(2);
+      
+      }
+
+    
+      .navLinks a {
+        margin: 0 10px;
+        text-decoration: none; /* Optional: removes underline from links */
+        color: inherit; /* Optional: ensures the links use current color */
+        font-family: "AtleHaasBold", sans-serif;
+    }
+      
+      .navLinks a.regularLink {
+        font-weight: normal; /* Regular font when not active */
+      }
+      
+      .navLinks a.activeLink {
+        font-weight: bold; /* Bold font when active */
+      }

@@ -19,3 +19,4 @@ dbConfig().then(() => { //si sale todo bien
 console.error('Database connection error:', error.message);
 process.exit(1); // Exit the process with an error code
 });
+

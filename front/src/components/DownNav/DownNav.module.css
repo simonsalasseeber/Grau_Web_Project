@@ -1,0 +1,24 @@
+.logoSection {
+  
+    
+     width: 350px;
+     height: 60px;
+    }
+
+.navContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 00px;
+        margin-top: 50px;
+        padding: 100px;
+        padding-top: 0px;
+        padding-bottom: 0px;
+        
+    }
+
+.words 
+  {
+        font-family: "AtleHaasRegular", serif;
+
+}

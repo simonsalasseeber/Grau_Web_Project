@@ -1,0 +1,27 @@
+
+.card-img-top {
+  display: block; /* Ensures the image takes up the full width of its container */
+  width: 100%; /* Makes image responsive */
+  height: auto; /* Maintains aspect ratio */
+}
+
+.image-container {
+  position: relative;
+}
+
+.videopreview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0,0,0,0.5); /* Optional: adds a dark overlay if the video doesn't load */
+}
+
+.videopreview iframe {
+  width: 100%;
+  height: 100%;
+}
+.card-body {
+  width: 100%; /* Match the width of the card */
+}

@@ -1,4 +1,5 @@
 const mongoose = require("mongoose");
+const bcrypt = require("bcrypt"); 
 
 // Admin schema
 const adminSchema = new mongoose.Schema({
@@ -11,14 +12,13 @@ const adminSchema = new mongoose.Schema({
         type: String,
         required: true
     }
-})
+}, { collection: 'admin' })
 
-// do not return it to client
-adminSchema.set("toJSON", {
-        transform: (document, returnedObject) => {
-            delete returnedObject.hashedPassword
-            
-        }})
+
+adminSchema.methods.comparePassword = async function(candidatePassword) {
+    return await bcrypt.compare(candidatePassword, this.hashedPassword);
+};
+
         
     
 const Admin = mongoose.model("Admin", adminSchema);

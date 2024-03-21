@@ -1,0 +1,8 @@
+.container {
+    min-height: calc(100vh - YourNavHeight); 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; /* This will stretch the content to fill the container */
+  }
+
+ 
