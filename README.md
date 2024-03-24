@@ -2,7 +2,9 @@
 **Video**: (URL)
 **Description**: 
 
-With so many highs and lows, I can proudly share this finalized project. Struggling to decide what to make for the final project of this majestuous course, a musician friend of mine told me that he wanted to publish his works on a webpage. Capturing the opportunity, I decided to leverage the skills learned in CS50x with the ones acquired in the "SoyHenry" Bootcamp and accepted the challenge.
+Struggling to decide what to make for the final project of this majestuous course, a musician friend of mine told me that he wanted to publish his works on a webpage. Capturing the opportunity, I decided to leverage the skills learned in CS50x with the ones acquired in the "SoyHenry" Bootcamp and accepted the challenge. 
+
+Conscious about what did I know and not know, I decided to trust myself and to learn along the way the best way to solve the problem that I encountered, and I truly believe I have made it.
 
 **The project has the following structure**:
 
@@ -43,6 +45,10 @@ Bcrypt (library for hashing passwords securely)
 **Cloud Services**:
 
 Cloudinary (cloud-based image and video management service)
+
+**Testing**: 
+
+Jest (test runner for JavaScript) 
 
 
 **Final notes**: David, Brian, Doug: I truly appreciate what you do, it has certainly changed my life. Can't believe cs50 is free. God bless the internet, the education, and the passion for learning!
