@@ -1,3 +1,19 @@
 .logo {
+    color: #E0DECD;
     filter: invert(1) brightness(2);
+    display: flex;
+    justify-content: space-between; 
+
+}
+
+.container {
+    margin-top: 5%;
+    margin-bottom: 5%;
+    padding: 0px;
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-left: 0;
+    border-right: 0;
+    align-items: center;
+    position: relative;
 }

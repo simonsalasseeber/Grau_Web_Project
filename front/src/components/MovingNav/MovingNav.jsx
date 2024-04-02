@@ -12,7 +12,7 @@ const MovingNav = () => {
             <img src={grauLogo} alt='grauLogo'></img>
         </div>
         <div className={styles.socialMedia}>
-        <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
+        <a href="https://www.instagram.com/justgrau_/?hl=es" target="_blank" rel="noopener noreferrer">
           <img src={instagramLogo} alt="Instagram"/>
         </a>
         <a href="https://vimeo.com/pjasminoy?fbclid=PAAabD4az3zDFiOpjUFgeeupTHPGyEYonSRPCAryBqBzKITeq9S7jXQHP3oN4_aem_ATzVml59WoJzz7w7YFZJMP3QDmHxEyAiaOdj0rjOk5uXI_iCL2ebgSPy_KY88QApBMI" target="_blank" rel="noopener noreferrer">

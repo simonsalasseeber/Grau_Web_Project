@@ -2,10 +2,6 @@ const { addProjectService, deleteProjectService, getMainProjectService} = requir
 
 const cloudinary = require("../utils/cloudinary");
 
-const getAdminController = (req, res) => {
-    res.send("Admin page will soon be available");
-}
-
 const getMainProjectController = async (req, res) => {
     try {
         const mainProject = await getMainProjectService()
@@ -51,7 +47,6 @@ const deleteAdminController = async (req, res) => {
 
 
 module.exports = {
-    getAdminController,
     postAdminController,
     deleteAdminController,
     getMainProjectController

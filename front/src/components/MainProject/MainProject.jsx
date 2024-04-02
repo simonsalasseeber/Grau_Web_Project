@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react'
 import MainProjectCard from '../MainProjectCard/MainProjectCard';
 import axios from 'axios';
+import styles from './MainProject.module.css';
 
 const MainProject = () => {
   const URL_MAIN_PROJECT = "http://localhost:3000/admin/mainProject"; // Endpoint for fetching main project data
@@ -19,7 +20,7 @@ const MainProject = () => {
 }, []);
 
   return (
-      <div>
+      <div className={styles.container}>
           {mainProject && (
               <div>
                   <MainProjectCard 

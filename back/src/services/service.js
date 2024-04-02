@@ -71,5 +71,6 @@ module.exports = {
     addProjectService,
     deleteProjectService,
     checkLoginService,
-    getMainProjectService
+    getMainProjectService,
+    updateMainProjectService
 }

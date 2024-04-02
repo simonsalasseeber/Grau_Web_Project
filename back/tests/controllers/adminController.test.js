@@ -1,69 +1,69 @@
-// tests/controllers/adminController.test.js
-
-const { postAdminController } = require('../../src/controllers/adminController');
-const { addProjectService } = require('../../src/services/service');
-
-// Create the Mock function in order to replicate the addProjectService 
+// Combine the mocks for both services into a single jest.mock call
 jest.mock('../../src/services/service', () => ({
- addProjectService: jest.fn(),
-}));
+  getMainProjectService: jest.fn(),
+  deleteProjectService: jest.fn(),
+ }));
+ 
+ 
+ const { getMainProjectController, deleteAdminController } = require('../../src/controllers/adminController');
+ const { getMainProjectService, deleteProjectService } = require('../../src/services/service');
+ 
 
-describe('postAdminController', () => {
- it('should create a project and return it', async () => {
-    // Mock the request and response objects
-    const mockRequest = {
-      body: {
-        title: 'Test Project',
-        producer: 'Test Producer',
-        video: 'Test Video',
-      },
-    };
-    const mockResponse = {
-      json: jest.fn(),
-    };
-
-    // Mock the addProjectService to return a project
-    addProjectService.mockResolvedValue({
-      id: 1,
-      title: 'Test Project',
-      producer: 'Test Producer',
-      video: 'Test Video',
-    });
-
-    // Call the controller function
-    await postAdminController(mockRequest, mockResponse);
-
-    // Assert that the response was called with the expected project
-    expect(mockResponse.json).toHaveBeenCalledWith({
-      id: 1,
-      title: 'Test Project',
-      producer: 'Test Producer',
-      video: 'Test Video',
-    });
+ describe('getMainProjectController', () => {
+  it('should fetch the main project and send it as response', async () => {
+     // Mock the request and response objects
+     const mockRequest = {};
+     const mockResponse = {
+       send: jest.fn(),
+     };
+ 
+     // Mock the getMainProjectService to return a main project
+     const mockMainProject = {
+       title: 'Main Project',
+       producer: 'Test Producer',
+       video: 'Test Video',
+       image: {
+         public_id: 'testPublicId',
+         url: 'https://example.com/testImage.jpg',
+       },
+       isMain: true,
+     };
+     getMainProjectService.mockResolvedValue([mockMainProject]);
+ 
+     // Call the controller function
+     await getMainProjectController(mockRequest, mockResponse);
+ 
+     // Assert that the response was called with the expected main project
+     expect(mockResponse.send).toHaveBeenCalledWith([mockMainProject]);
+  });
  });
 
- it('should handle errors and return an error message', async () => {
-    // Mock the request and response objects
-    const mockRequest = {
-      body: {
-        title: 'Test Project',
-        producer: 'Test Producer',
-        video: 'Test Video',
-      },
-    };
-    const mockResponse = {
-      json: jest.fn(),
-    };
-
-    // Mock the addProjectService to throw an error
-    addProjectService.mockRejectedValue(new Error('Database error'));
-
-    // Call the controller function
-    await postAdminController(mockRequest, mockResponse);
-
-    // Assert that the response was called with the expected error message
-    expect(mockResponse.json).toHaveBeenCalledWith({
-      message: 'Database error',
-    });
+ describe('deleteAdminController', () => {
+  it('should delete a project and send it as response', async () => {
+     // Mock the request and response objects
+     const mockRequest = {
+       params: {
+         title: 'Test Project',
+       },
+     };
+     const mockResponse = {
+       json: jest.fn(),
+     };
+ 
+     // Mock the deleteProjectService to return a deleted project
+     const mockDeletedProject = {
+       title: 'Test Project',
+       // Add other properties as needed
+     };
+     deleteProjectService.mockResolvedValue(mockDeletedProject);
+ 
+     // Call the controller function
+     await deleteAdminController(mockRequest, mockResponse);
+ 
+     // Assert that the response was called with the expected deleted project
+     expect(mockResponse.json).toHaveBeenCalledWith(mockDeletedProject);
+  });
  });
-});
+ 
+
+

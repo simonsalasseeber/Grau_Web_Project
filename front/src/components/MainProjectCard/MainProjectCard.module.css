@@ -1,15 +1,13 @@
 
 .card-img-top {
-  display: block; /* Ensures the image takes up the full width of its container */
-  width: 100%; /* Makes image responsive */
-  height: auto; /* Maintains aspect ratio */
+  display: block; 
+  width: 100%; 
+  height: auto; 
 }
 
-.image-container {
-  position: relative;
-}
 
 .videopreview {
+  display: block;
   position: absolute;
   top: 0;
   left: 0;
@@ -18,10 +16,58 @@
   background-color: rgba(0,0,0,0.5); /* Optional: adds a dark overlay if the video doesn't load */
 }
 
-.videopreview iframe {
-  width: 100%;
-  height: 100%;
-}
 .card-body {
   width: 100%; /* Match the width of the card */
+}
+
+.image-container {
+  position: relative; /* Ensure the video overlay is positioned relative to this container */
+  /* Other styles remain unchanged */
+ }
+ 
+ .videoOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8); /* Semi-transparent black background */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000; /* Ensure it's above other content */
+ }
+ 
+ .videoPlayer {
+  position: relative;
+  width: 80%; /* Adjust as needed */
+  height: 80%; /* Adjust as needed */
+  background-color: #000; /* Black background for the video player */
+  overflow: hidden; /* Ensure the video does not overflow its container */
+ }
+ 
+ .closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  padding: 5px 10px;
+  cursor: pointer;
+ }
+ 
+ .playIcon {
+  position: absolute;
+  top: 50%;
+  left: 55%;
+  transform: translate(-50%, -50%); /* Center the play icon */
+  cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
+  z-index: 1; /* Ensure the icon is above the image */
+  color: white;
+ }
+
+ .playI {
+  fill: white;
+  width: 10%
 }

@@ -3,6 +3,101 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between; /* This will stretch the content to fill the container */
+    margin-bottom: 2%;
   }
+
+  .seccontainer {
+    display: flex;
+    flex-direction: column;
+   }
+   
+   .row {
+    display: flex;
+    justify-content: space-between;
+   }
+   
+   .logo {
+    flex: 1;
+    text-align: center;
+   }
+   
+   .textT {
+    flex: 1;
+    text-align: center;
+    font-family: "AtleHaasBold", serif;
+    font-size: larger;
+    margin-top: 3%;
+
+   }
+
+   .textP {
+    flex: 1;
+    text-align: center;
+    font-family: "AtleHaasBold", serif;
+    font-size: larger;
+   }
+   
+   .grisLogo{
+    width: 20%;
+    height: auto;
+    margin-left: 5%;
+  }
+
+  
+
+.tomiLogo{
+  width: 20%;
+  height: auto;
+  margin-top: 3%;
+  margin-right: 5%;
+
+}
+
+.paragraphG {
+  margin-right: 5%;
+  font-family: "AtleHaasRegular", serif;
+  font-size: medium;
+}
+
+.paragraphT {
+  margin-left: 5%;
+  margin-top: 4%;
+  font-family: "AtleHaasRegular", serif;
+  font-size: medium;
+}
+
+.mainP{ 
+  margin: 1%;
+  margin-left: 15%;
+}
+   
+
+.Atlebold {
+  font-family: "AtleHaasBold", serif;
+}
+
+.Atleregular {
+  font-family: "AtleHaasRegular", serif;
+}
+.MonoRegular {
+  font-family: "MonumentalExtendedRegular", serif;
+}
+
+.PPRegular {
+  font-family: "PPEditorialNew-Regular", serif;
+}
+
+.PPul {
+  font-family: "PPEditorialNew-Ultralight", serif;
+}
+
+.MonoLight {
+  font-family: "MonumentalExtendedLight", serif;
+  font-size: 70%;
+}
+
+.MonoBlack {
+  font-family: "MonumentalExtendedBlack", serif;
+}
 
  

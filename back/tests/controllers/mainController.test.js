@@ -18,8 +18,8 @@ describe('mainController', () => {
 
     // Mock the getProjectsService to return a list of projects
     getProjectsService.mockResolvedValue([
-      { id: 1, title: 'Project 1', producer: 'Producer 1' },
-      { id: 2, title: 'Project 2', producer: 'Producer 2' },
+      { id: 1, title: 'Project 1', producer: 'Producer 1', image: "fake URL" },
+      { id: 2, title: 'Project 2', producer: 'Producer 2', image: "fake URL" },
     ]);
 
     // Call the controller function
@@ -27,8 +27,8 @@ describe('mainController', () => {
 
     // Assert that the response was called with the expected projects
     expect(mockResponse.send).toHaveBeenCalledWith([
-      { id: 1, title: 'Project 1', producer: 'Producer 1' },
-      { id: 2, title: 'Project 2', producer: 'Producer 2' },
+      { id: 1, title: 'Project 1', producer: 'Producer 1', image: "fake URL"  },
+      { id: 2, title: 'Project 2', producer: 'Producer 2', image: "fake URL"  },
     ]);
  });
 

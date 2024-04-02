@@ -5,30 +5,39 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    padding-top: 15px;
-    padding-bottom: 40px;
+    padding-top: 1%;
+    padding-bottom: 5%;
     z-index: 1;
     
 }
 
+
 .logoSection {
 position: relative; /* Required for z-index to work */
 
- width: 1300px;
- height: 180px;
- margin: 0px;
+width: 67.3%;
+height: 16.8%;
  justify-content: center;
 }
 
 .linkSection {
     display: flex;
     gap: 25em;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 110%;
+    font-weight: 100%;
     flex-direction: row;
     align-items: flex-end;
     justify-content: space-evenly;
     font-family: "AtleHaasBold", sans-serif;
     font-weight: bold;
+}
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .linkSection {
+        gap: 0.5em; /* Smaller gap for mobile devices */
+        font-size: 80%;
+    }
 }
 
