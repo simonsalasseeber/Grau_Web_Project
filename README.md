@@ -4,7 +4,7 @@
 
 Struggling to decide what to make for the final project of this majestuous course, a musician friend of mine told me that he wanted to publish his works on a webpage. Capturing the opportunity, I decided to leverage the skills learned in CS50x with the ones acquired in the "SoyHenry" Bootcamp and accepted the challenge. 
 
-Conscious about what did I know and not know, I decided to trust myself and to learn along the way the best way to solve the problem that I encountered, and I truly believe I have made it.
+Conscious about what I knew and not knew, I decided to trust myself and to learn along the way the best way to solve the problem that I encountered, and I truly believe I have made it.
 
 **The project has the following structure**:
 
@@ -20,9 +20,9 @@ Sensitive variables were securely stored in an external .env file, adhering to b
 
 **Biggest challenge**: 
 
-If I had to pick the biggest challenge of the project, it would undoubtedly be setting up the Admin server. My friend intends to use this page indefinitely, necessitating the ability to upload new projects, delete old ones, and designate one for the "Main" section. Initially, I grappled with the daunting task, pondering, "How on earth am I going to code a functionality that a) receives an image, a video URL, a title, and a producer; b) processes and uploads all that to the web; c) enables deletion and addition of projects at will; d) includes encoded logic accessible only to the admin?"
+If I had to pick the biggest challenge of the project, it would undoubtedly be setting up the Admin server. My friend intends to use this page indefinitely, necessitating the ability to upload new projects, delete old ones, and designate one for the "Main" section. Initially, I felt overwhelmed by the huge task, pondering, "How on earth am I going to code a functionality that a) receives an image, a video URL, a title, and a producer; b) processes and uploads all that to the web; c) enables deletion and addition of projects at will; d) includes encoded logic accessible only to the admin?"
 
-Through diligent research, I discovered Cloudinary, a cloud service for media management that integrates with Node.js projects. After diving into their documentation, I formulated a plan on how to tackle the challenge. Following numerous iterations and troubleshooting sessions, I successfully implemented an upload feature in the backend, which receives images and posts them to the Cloudinary platform. This upload functionality is invoked by both the create project service and the delete project service, enabling efficient management of project content. Additionally, I developed a form on the /admin route to facilitate image submission, which triggers a post request to the backend and executes the aforementioned logic.
+Through diligent research, I discovered Cloudinary, a cloud service for media management that integrates with Node.js projects. After diving into their documentation, I started to investigate on how to tackle the challenge. Following numerous iterations, uncountable YouTube videos, and lots of substack pages, I successfully implemented an upload feature in the backend, which receives images and posts them to the Cloudinary platform. This upload functionality is invoked by both the create project service and the delete project service, enabling efficient management of project content. Additionally, I developed a form on the /admin route to facilitate image submission, which triggers a post request to the backend and executes the aforementioned logic.
 
 In summary, thanks to internet resources, combined with lots of patience and dedication, I now firmly believe that everything is possible.
 
