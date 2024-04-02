@@ -4,9 +4,9 @@ import { toast } from 'react-toastify';
 import {useNavigate} from 'react-router-dom';
 
 const AdminManage = ({ setIsLoggedIn }) => {
-const POST_URL = "http://localhost:3000/admin/upload";
-const GET_URL = "http://localhost:3000/"
-const DELETE_URL = "http://localhost:3000/admin"
+const POST_URL = process.env.REACT_APP_BACK_URL_POST;
+const GET_URL = process.env.REACT_APP_BACK_URL_GET;
+const DELETE_URL = process.env.REACT_APP_BACK_URL_DELETE;
 
 const [title, setTitle] = useState('');
 const [producer, setProducer] = useState('');

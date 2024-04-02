@@ -4,7 +4,7 @@ import styles from './SecProjects.module.css';
 import axios from 'axios';
 
 const SecProjects = () => {
-    const URL_SEC_PROJECTS = "http://localhost:3000/";
+    const URL_SEC_PROJECTS = process.env.REACT_APP_BACK_URL_SEC;
     const [secProjects, setsecProjects] = useState([]);
 
   useEffect(() => {

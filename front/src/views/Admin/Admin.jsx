@@ -3,7 +3,7 @@ import { useState } from 'react';
 import axios from 'axios';
 import AdminManage from './AdminManage';
 
-const CREDENTIALS_URL = "http://localhost:3000/admin/login"
+const CREDENTIALS_URL = process.env.REACT_APP_BACK_URL_CREDENTIALS;
 const Admin = () => {
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 

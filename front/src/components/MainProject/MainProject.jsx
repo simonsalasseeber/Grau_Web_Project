@@ -4,7 +4,7 @@ import axios from 'axios';
 import styles from './MainProject.module.css';
 
 const MainProject = () => {
-  const URL_MAIN_PROJECT = "http://localhost:3000/admin/mainProject"; // Endpoint for fetching main project data
+  const URL_MAIN_PROJECT = process.env.REACT_APP_BACK_URL_MAIN; // Endpoint for fetching main project data
   const [mainProject, setMainProject] = useState(null);
 
   useEffect(() => {
