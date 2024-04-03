@@ -10,6 +10,12 @@ const MainProject = () => {
   const [mainProject, setMainProject] = useState(null);
 
   useEffect(() => {
+
+    if (!URL_MAIN_PROJECT) {
+        console.error('URL_MAIN_PROJECT is not defined');
+        return;
+     }
+     
     axios.get(URL_MAIN_PROJECT)
         .then(response => {
             // Extract the main project from the array
