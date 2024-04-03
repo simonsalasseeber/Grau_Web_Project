@@ -8,6 +8,11 @@ const SecProjects = () => {
     const [secProjects, setsecProjects] = useState([]);
 
   useEffect(() => {
+    if (!URL_SEC_PROJECTS) {
+        console.error('URL_SEC_PROJECTS is not defined');
+        return;
+     }
+
     axios.get(URL_SEC_PROJECTS)
         .then(response => {
             // Extract the main project from the array

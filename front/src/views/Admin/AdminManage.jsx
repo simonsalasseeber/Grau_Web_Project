@@ -18,6 +18,11 @@ const [selectedTitle, setSelectedTitle] = useState('');
 const navigate = useNavigate();
 
 useEffect(()=>{
+    if (!POST_URL || !GET_URL || !DELETE_URL) {
+        console.error('POST_URL, GET_URL, or DELETE_URL is not defined');
+        return;
+     }
+
     axios.get(GET_URL)
     .then(response => {
         setTitles(response.data.map(project => project.title));
