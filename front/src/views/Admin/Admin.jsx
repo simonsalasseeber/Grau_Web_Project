@@ -6,10 +6,7 @@ import AdminManage from './AdminManage';
 const CREDENTIALS_URL = import.meta.env.VITE_BACK_URL_CREDENTIALS;
 const Admin = () => {
 
-  if (!CREDENTIALS_URL) {
-    console.error('CREDENTIALS_URL is not defined');
-    return;
- }
+  
     const [isLoggedIn, setIsLoggedIn] = useState(false);
 
     const [admin, setAdmin] = useState({
@@ -25,6 +22,10 @@ const Admin = () => {
     const handleSubmit = (event) => {
         event.preventDefault();
         const checkUser = {username: admin.username, password: admin.password}
+        if (!CREDENTIALS_URL) {
+          console.error('CREDENTIALS_URL is not defined');
+          return;
+       }
         axios.post(CREDENTIALS_URL, checkUser)
             .then(response => {
                 
