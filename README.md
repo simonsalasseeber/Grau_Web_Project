@@ -1,5 +1,5 @@
 **Project title**: Grau music
-**Video**: (URL)
+**Video**: https://www.youtube.com/watch?v=51SHy2UhLpQ
 **Description**: 
 
 Struggling to decide what to make for the final project of this majestuous course, a musician friend of mine told me that he wanted to publish his works on a webpage. Capturing the opportunity, I decided to leverage the skills learned in CS50x with the ones acquired in the "SoyHenry" Bootcamp and accepted the challenge. 
