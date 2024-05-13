@@ -1,8 +1,7 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, Suspense } from 'react'
 import MainProjectCard from '../MainProjectCard/MainProjectCard';
 import axios from 'axios';
 import styles from './MainProject.module.css';
-
 
 
 const MainProject = () => {
@@ -30,6 +29,7 @@ const MainProject = () => {
   return (
       <div className={styles.container}>
           {mainProject && (
+
               <div>
                   <MainProjectCard 
                       video={mainProject.video}
@@ -38,7 +38,7 @@ const MainProject = () => {
                       image={mainProject.image.url}
                   />
               </div>
-          )}
+        )}
       </div>
   );
 };
