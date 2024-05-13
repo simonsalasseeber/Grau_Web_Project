@@ -1,12 +1,14 @@
 .secProjectCard {
-  width: calc(50% - 20px); /* 50% for 2 in a row, minus a gap */
-  margin: 10px; /* Margin for the gap */
+  width: calc(50% - 2em); /* 50% for 2 in a row, minus a gap */
+  height:auto;
+  margin: 1em; /* Margin for the gap */
   box-sizing: border-box; /* Include padding and border in the element's width */
   display: inline-flex; /* Display as inline block */
   flex-direction: column; /* Arrange items vertically */
   align-items: center; /* Center items horizontally */
   position: relative; /* Set position relative for video overlay */
 }
+
 
 .videopreview {
   position: absolute;
@@ -53,10 +55,17 @@
 /* Responsive styling */
 @media (max-width: 768px) {
   .secProjectCard {
-    width: 100%; /* Full width on smaller screens */
-    margin: 34%;
-    margin-left: 34%;
+    width: 5%;
     margin-top: 0%;
+    display: inline-flex;
+  }
+  .imageContainer {
+    flex-direction: column;
+   width: auto;
+    }
+  .imageContainer img {
+    height: 2%;
+    width: auto;
   }
 }
 
@@ -66,7 +75,7 @@
 }
 
 .imageContainer img {
-  height: 350px;
+  height: 25em;
   width: auto;
 }
 
@@ -74,7 +83,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center; /* Centers items vertically */
-  margin-top: 8px;
+  margin-top: 0.8em;
 }
 
 .videoTitle {

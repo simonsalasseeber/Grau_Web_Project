@@ -23,11 +23,15 @@
 }
 
 @media (max-width: 768px) {
+    .navContainer{
+        display: flex;
+
+    }
     .logoSection {
         width: 50%; /* Adjust the width to make the logo larger */
     }
 
     .words {
-        font-size: 30%; /* Adjust the font size to make the text smaller */
+        font-size: 1em; /* Adjust the font size to make the text smaller */
     }
 }

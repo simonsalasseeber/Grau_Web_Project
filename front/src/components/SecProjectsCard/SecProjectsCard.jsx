@@ -16,6 +16,8 @@ const SecProjectsCard = ({video, title, producer, image}) => {
   };
 
   return (
+
+
     <div className={styles.secProjectCard}>
        <div className={styles.imageContainer}>
          <img

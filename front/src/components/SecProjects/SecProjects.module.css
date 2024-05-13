@@ -1,15 +1,29 @@
 .secProjectsContainer {
-    flex-direction: column; /* Arrange items vertically */
-  align-items: center; /* Center items horizontally */
+    flex-direction: column; 
+  align-items: center; 
   position: relative;
   margin-bottom: 3%;
 }
 
 @media (max-width: 768px) {
   .secProjectsContainer {
-      flex-direction: row; /* Arrange items in a row */
-      flex-wrap: wrap; /* Allow items to wrap onto new lines */
-      justify-content: center; /* Center items horizontally */
+      flex-direction: row; 
+      display: flex;
+      margin-left: 15%;
+      margin-right: 15%;
   }
+}
+
+  @media (max-width: 1024px) {
+    .secProjectsContainer {
+        flex-direction: column; 
+        flex-wrap: wrap; /* Allow items to wrap onto new lines */
+        justify-content: center; /* Center items horizontally */
+        display: flex;
+        margin-left: 50%;
+        width: 5%;
+        height: auto;
+        position: relative;
+    }
 }
 
