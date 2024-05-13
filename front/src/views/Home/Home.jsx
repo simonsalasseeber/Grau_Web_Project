@@ -6,6 +6,7 @@ import NavBar from '../../components/NavBar/NavBar'
 import DownNav from '../../components/DownNav/DownNav'
 import Banner from '../../components/Banner/Banner';
 import MovingNav from '../../components/MovingNav/MovingNav';
+import Loading from './Loading';
 
 const MainProject=lazy(() => import('../../components/MainProject/MainProject'));
 const SecProjects=lazy(() => import('../../components/SecProjects/SecProjects'));
@@ -15,7 +16,7 @@ const Home = () => {
 
   return (
     <div className={styles.homeContainer}>
-    <Suspense fallback={<img src="../../assets/LogoGrau_Vectorial_1.svg" alt="Logo" />}>
+    <Suspense fallback={<Loading />}>
         <MovingNav />
         <NavBar />
         <MainProject/>
