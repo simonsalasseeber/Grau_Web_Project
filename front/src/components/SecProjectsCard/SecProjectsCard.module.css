@@ -108,9 +108,11 @@
   cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
   z-index: 1; /* Ensure the icon is above the image */
   color: white;
+  outline: none;
  }
 
  .playI {
   fill: white;
-  width: 10%
+  width: 10%;
+  outline: none;
 }

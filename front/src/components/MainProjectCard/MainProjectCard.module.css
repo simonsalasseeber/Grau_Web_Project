@@ -69,5 +69,6 @@
 
  .playI {
   fill: white;
-  width: 10%
+  width: 10%;
+  outline: none;
 }
