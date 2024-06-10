@@ -7,35 +7,34 @@
     padding: 10 20px; /* Add a solid background color if needed */
     z-index: 1000; /* High z-index for the navbar to be on top */
     box-sizing: border-box;
-    
-
 }
 
 .logoSection {
-     width: 80px;
-     height: 80px;
-     margin-top: 40px;
-    margin-left: 40px;
-    padding: 1px;
-    }
+  width: 80px;
+  height: 80px;
+  margin-top: 40px;
+ margin-left: 40px;
+ padding: 1px;
+ }
 
-    .socialMedia a {
-        margin: 0 10px;
-        
-      }
+.socialMedia a {
+  margin: 0 8px;
+  
+}
+
+.socialMedia img {
+  width: 30px; /* Adjust size as needed */
+  height: 30px; /* Adjust size as needed */
+  color: #E0DECD;
+}
       
-      .socialMedia img {
-        width: 30px; /* Adjust size as needed */
-        height: 30px; /* Adjust size as needed */
-        filter: invert(1) brightness(2);
-      
-      }
 
     
       .navLinks a {
         margin: 0 10px;
         text-decoration: none; /* Optional: removes underline from links */
-        color: inherit; /* Optional: ensures the links use current color */
+        color: #E0DECD;
+        ; /* Optional: ensures the links use current color */
         font-family: "AtleHaasBold", sans-serif;
     }
       
@@ -46,3 +45,26 @@
       .navLinks a.activeLink {
         font-weight: bold; /* Bold font when active */
       }
+
+      @media screen and (max-width: 768px) {
+        .navContainer {
+            flex-direction: row; /* Cambia la dirección del flujo a columna */
+            height: auto; /* Altura automática para adaptarse al contenido */
+            padding: 10px; /* Ajusta el relleno */
+        }
+    
+        .logoSection {
+          width: 50%;
+        }
+        
+        .socialMedia, .navLinks {
+          width: 100%; /* Ancho completo para ocupar todo el ancho de la pantalla */
+          margin-bottom: 10px; /* Espacio entre las secciones */
+          margin-left: 20%;
+
+      }
+  
+      .socialMedia a {
+          margin: 0 1px; /* Espacio entre cada enlace */
+      }
+    }

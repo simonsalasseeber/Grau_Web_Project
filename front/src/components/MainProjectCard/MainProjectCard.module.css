@@ -50,7 +50,7 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  background-color: #fff;
+  background-color: #E0DECD;
   color: #000;
   border: none;
   padding: 5px 10px;
@@ -60,15 +60,15 @@
  .playIcon {
   position: absolute;
   top: 50%;
-  left: 55%;
+  left: 65%;
   transform: translate(-50%, -50%); /* Center the play icon */
   cursor: pointer; /* Change the cursor to a pointer when hovering over the icon */
   z-index: 1; /* Ensure the icon is above the image */
-  color: white;
+  color: #E0DECD;
  }
 
  .playI {
-  fill: white;
+  fill: #E0DECD;
   width: 10%;
   outline: none;
 }
