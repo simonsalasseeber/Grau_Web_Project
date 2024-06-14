@@ -12,7 +12,7 @@ const MainProjectCard = ({video, title, producer, image}) => {
   };
 
   return (
-    <div className="image-container position-relative">
+    <div className="image-container position-relative mx-6 md:mx-6 lg:mx-8">
        <img src={image} className="card-img-top" alt={title} />
        <div className={styles.playIcon} onClick={toggleVideoPreview}>
             <PlayIcon className={styles.playI} />

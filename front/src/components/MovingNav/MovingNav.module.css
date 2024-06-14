@@ -40,10 +40,14 @@
       
       .navLinks a.regularLink {
         font-weight: normal; /* Regular font when not active */
+        color: #E0DECD;
+
       }
       
       .navLinks a.activeLink {
         font-weight: bold; /* Bold font when active */
+        color: #E0DECD;
+
       }
 
       @media screen and (max-width: 768px) {

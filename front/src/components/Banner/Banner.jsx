@@ -5,7 +5,7 @@ import styles from './Banner.module.css';
 
 const Banner = () => {
   return (
-    <div className='flex flex-col min-h-screen pt-24' style={{ borderTop: '0.1em solid white', borderBottom: '0.1em solid white', marginTop: '5%', marginBottom: '5%' }}>
+    <div className='flex flex-col ' style={{ borderTop: '0.1em solid white', borderBottom: '0.1em solid white', marginTop: '5%'}}>
       <img src={banner} alt="banner" className={styles.logo}></img>
     </div>
   )

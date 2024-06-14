@@ -10,7 +10,7 @@ const About = () => {
   return (
     <>
     <MovingNav />
-    <div className={styles.container}>
+    <div className="pt-16 mx-6 md:mx-6 lg:mx-8 text-[#E0DECD]">
         <div className={styles.mainP}>
           <h1>Boutique sound crafting. From Argentina, with love. </h1>
         </div>

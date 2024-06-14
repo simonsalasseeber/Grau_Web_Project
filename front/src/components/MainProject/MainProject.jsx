@@ -1,7 +1,6 @@
 import React, { useEffect, useState, Suspense } from 'react'
 import MainProjectCard from '../MainProjectCard/MainProjectCard';
 import axios from 'axios';
-import styles from './MainProject.module.css';
 
 
 const MainProject = () => {
@@ -27,7 +26,7 @@ const MainProject = () => {
 }, []);
 
   return (
-      <div className={styles.container}>
+      <div className="mx-6 md:mx-6 lg:mx-8">
           {mainProject && (
 
               <div>
