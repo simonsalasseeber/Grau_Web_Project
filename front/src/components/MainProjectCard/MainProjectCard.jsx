@@ -14,9 +14,9 @@ const MainProjectCard = ({video, title, producer, image}) => {
   return (
     <div className="image-container position-relative mx-6 md:mx-6 lg:mx-8">
        <img src={image} className="card-img-top" alt={title} />
-       <div className={styles.playIcon} onClick={toggleVideoPreview}>
-            <PlayIcon className={styles.playI} />
-         </div>
+       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/6 -translate-y-1/2 cursor-pointer z-2 text-[#E0DECD]" onClick={toggleVideoPreview}>
+            <PlayIcon className="fill-current w-1/10" />
+          </div>
        <div className="card-body">
          {/* Video preview */}
          {showVideoPreview && (

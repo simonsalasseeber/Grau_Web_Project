@@ -25,16 +25,17 @@ const SecProjectsCard = ({video, title, producer, image}) => {
   return (
 
 
-    <div className={styles.secProjectCard}>
-       <div className={styles.imageContainer}>
+      <div className="w-full p-4 box-border flex flex-col items-center relative">
+      <div className="relative text-center w-auto">
+  
          <img
            src={image}
            alt={title}
            className={styles.grid}
          />
-         <div className={styles.playIcon} onClick={toggleVideoPreview}>
-            <PlayIcon className={styles.playI} />
-         </div>
+         <div className="absolute top-1/2 left-1/2 transform -translate-x-1/6 -translate-y-1/2 cursor-pointer z-2 text-[#E0DECD]" onClick={toggleVideoPreview}>
+            <PlayIcon className="fill-current w-1/10" />
+          </div>
          <div className={styles.textContainer}>
            <h4 className={styles.videoTitle}>{title}</h4>
            <p className={styles.videoProducer}>{producer}</p>

@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
 import SecProjectsCard from '../SecProjectsCard/SecProjectsCard';
-import styles from './SecProjects.module.css';
 import axios from 'axios';
 
 const SecProjects = () => {
@@ -26,7 +25,7 @@ const SecProjects = () => {
 }, []);
 
 return (
-  <div className={styles.secProjectsContainer}>
+  <div className='grid grid-cols-1 md:grid-cols-2 gap-4'>
       {secProjects && secProjects.map(secProject => (
           <SecProjectsCard
               key={secProject._id}
