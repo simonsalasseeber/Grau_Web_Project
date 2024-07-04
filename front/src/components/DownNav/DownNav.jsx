@@ -1,5 +1,4 @@
 import React from 'react'
-import styles from './DownNav.module.css'
 import { ReactSVG } from 'react-svg';
 import reactLogo from '../../assets/LogoGrau_Vectorial_1.svg';
 // 
