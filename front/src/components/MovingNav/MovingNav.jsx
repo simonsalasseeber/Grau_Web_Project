@@ -6,11 +6,22 @@ import vimeoLogo from "../../assets/VIMEO9.svg"
 import { NavLink } from 'react-router-dom';
 
 const MovingNav = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth'
+    });
+  };
   return (
     <header className="bg-black shadow-xl fixed top-0 left-0 z-10 w-full h-16">
     <nav className="flex items-center justify-between md:px-10 py-2 md:py-4 px-12 py-4 h-full">
       <div className="flex items-center">
-        <img src={grauLogo} alt="grauLogo" className="h-8 w-auto" />
+      <img 
+            src={grauLogo} 
+            alt="grauLogo" 
+            className="h-8 w-auto cursor-pointer" 
+            onClick={scrollToTop}
+          />
       </div>
       <div className="flex items-center space-x-4">
         <a href="https://www.instagram.com/justgrau_/?hl=es" target="_blank" rel="noopener noreferrer">
