@@ -37,8 +37,8 @@ const SecProjectsCard = ({video, title, producer, image}) => {
             <PlayIcon className="fill-current w-1/10" />
           </div>
          <div className={styles.textContainer}>
-           <h4 className={styles.videoTitle}>{title}</h4>
-           <p className={styles.videoProducer}>{producer}</p>
+           <h4 class="text-left m-0 flex-grow font-monumental-extended-black text-[#E0DECD]">{title}</h4>
+           <p class="text-right m-0 whitespace-nowrap font-monumental-extended-regular text-[#E0DECD]">{producer}</p>
          </div>
        </div>
        {showVideoPreview && (
