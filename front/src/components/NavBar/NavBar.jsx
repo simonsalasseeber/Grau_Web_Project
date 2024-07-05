@@ -8,16 +8,20 @@ const NavBar = () => {
 
 
   return (
-    <div className="pt-16 flex w-full h-auto items-center justify-center flex-wrap pt-1 pb-5 z-1">
-      <div className="relative z-100 w-3/5 h-auto flex justify-center md: mx-auto md:py-8 px-90 ">
-        <ReactSVG src={reactLogo} className="pt-16 h-4/5 w-11/12 text-[#E0DECD]" />
-      </div>
-      <div className={styles.linkSection}>
-          <span>ORIGINAL MUSIC</span>
-          <span>MIXING</span>
-          <span>SOUND DESIGN</span>
-      </div>
-      </div>
+
+
+<div className="flex flex-col w-full h-auto items-center justify-between pt-16 pb-5 z-1">
+<div className="relative z-100 w-full max-w-4xl h-auto flex justify-center mt-2 mb-0 px-4">
+  <ReactSVG src={reactLogo} className="h-auto w-2/5 max-w-xl " />
+</div>
+<div className='flex grid-cols-3 space-evenly gap-3 items-end text-[#E0DECD] font-atle-haas-bold md:text-xs' >
+    <p>ORIGINAL MUSIC</p>
+    <p>MIXING</p>
+    <p>SOUND DESIGN</p>
+</div>
+</div>
+
+
 )
 
   
