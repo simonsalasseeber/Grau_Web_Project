@@ -28,7 +28,7 @@ const About = () => {
           </div>
           
           <div>
-            <h2 className="text-xl mb-4 font-monumental-extended-regular">Bold and Modern</h2>
+            <h2 className="text-xl mb-4 font-bold font-monumental-extended-regular">Bold and Modern</h2>
             <p className="mb-4 font-monumental-extended-light">Our approach is anything but conventional. We're bold, we're modern, and we're always pushing the envelope to create something extraordinary. With GRAU, you're not just getting music; you're getting a partner dedicated to making your vision come alive in the most compelling way possible.</p>
             <h3 className="text-lg font-semibold mb-2 font-monumental-extended-regular">Join Us</h3>
             <p className='font-monumental-extended-light'>Let's create something amazing together. Whether you're an established company or an up-and-coming director, GRAU is here to help you develop a unique sonic universe that resonates. Trust in our expertise, embrace the collaboration, and watch as we transform your project with our unparalleled musical artistry.</p>
