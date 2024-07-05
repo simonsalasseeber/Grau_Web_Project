@@ -36,7 +36,7 @@ const About = () => {
         </div>
         
         <div className="text-center mt-8">
-          <p className="text-xl font-bold mb-4 font-monumental-extended-black">BE A PART OF THE GRAU MOVEMENT. LET'S CREAT THE UNFORGOTTABLE</p>
+          <p className="text-xl font-bold mb-4 font-monumental-extended-black">BE A PART OF THE GRAU MOVEMENT. LET'S CREATE THE UNFORGOTTABLE</p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-4 justify-center font-monumental-extended-light">
               <div className="text-center">
                 <p>PEDRO JASMINOY</p>

@@ -72,38 +72,47 @@ button:focus-visible {
 
 @font-face {
   font-family: 'AtleHaasBold';
+  font-display: swap;
   src: url('assets/typos/AlteHaasGroteskBold.ttf') format('opentype');
  }
  @font-face {
   font-family: 'AtleHaasRegular';
+  font-display: swap;
   src: url('assets/typos/AlteHaasGroteskRegular.ttf') format('opentype');
  }
  @font-face {
   font-family: 'MonumentalExtendedBlack';
+  font-display: swap;
   src: url('assets/typos/MonumentExtended-Black.ttf') format('opentype');
  }
  @font-face {
   font-family: 'MonumentalExtendedLight';
+  font-display: swap;
   src: url('assets/typos/MonumentExtended-Light.otf') format('opentype');
  }
  @font-face {
   font-family: 'MonumentalExtendedRegular';
+  font-display: swap;
   src: url('assets/typos/MonumentExtended-Regular.otf') format('opentype');
  }
  @font-face {
   font-family: 'PPEditorialNew-Italic';
+  font-display: swap;
   src: url('assets/typos/PPEditorialNew-Italic.otf') format('opentype');
  }
  @font-face {
   font-family: 'PPEditorialNew-Regular';
+  font-display: swap;
   src: url('assets/typos/PPEditorialNew-Regular.otf') format('opentype');
  }
  @font-face {
   font-family: 'PPEditorialNew-Ultralight';
+  font-display: swap;
   src: url('assets/typos/PPEditorialNew-Ultralight.otf') format('opentype');
  }
  @font-face {
   font-family: 'PPEditorialNew-UltralightItalic';
+  font-display: swap;
   src: url('assets/typos/PPEditorialNew-UltralightItalic.otf') format('opentype');
  }
 

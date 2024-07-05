@@ -26,7 +26,7 @@ const MainProject = () => {
 }, []);
 
   return (
-      <div className="mx-6 md:mx-6 lg:mx-8">
+      <div className="mx-6 md:mx-8 lg:mx-8">
           {mainProject && (
 
               <div>

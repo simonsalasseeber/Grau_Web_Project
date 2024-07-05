@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React from 'react';
 import { useEffect, useState } from 'react';
 
 import logo1 from '../../assets/banner-finals/Logo_Fila.svg';
@@ -9,12 +9,13 @@ import logo5 from '../../assets/banner-finals/Logo_Netflix.svg';
 import logo6 from '../../assets/banner-finals/Logo_Pacifico.svg';
 import logo7 from '../../assets/banner-finals/Logo_Spotify.svg';
 import logo8 from '../../assets/banner-finals/Logo_United.svg';
+import logo9 from  '../../assets/banner-finals/Logo_Adidas.svg';
 
 
 
 const LogoCarousel = () => {
     const [position, setPosition] = useState(0);
-    const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8];
+    const logos = [logo1, logo2, logo3, logo4, logo5, logo6, logo7, logo8, logo9];
 
     useEffect(() => {
         let animationId;
