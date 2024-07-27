@@ -73,47 +73,47 @@ button:focus-visible {
 @font-face {
   font-family: 'AtleHaasBold';
   font-display: swap;
-  src: url('assets/typos/AlteHaasGroteskBold.ttf') format('woff2');
+  src: url('assets/typos/AlteHaasGrotesk_Bold.woff2') format('woff2');
  }
  @font-face {
   font-family: 'AtleHaasRegular';
   font-display: swap;
-  src: url('assets/typos/AlteHaasGroteskRegular.ttf') format('woff2');
+  src: url('assets/typos/AlteHaasGrotesk.woff2') format('woff2');
  }
  @font-face {
   font-family: 'MonumentalExtendedBlack';
   font-display: swap;
-  src: url('assets/typos/MonumentExtended-Black.ttf') format('woff2');
+  src: url('assets/typos/MonumentExtended-Black.woff2') format('woff2');
  }
  @font-face {
   font-family: 'MonumentalExtendedLight';
   font-display: swap;
-  src: url('assets/typos/MonumentExtended-Light.otf') format('woff2');
+  src: url('assets/typos/MonumentExtended-Light.woff2') format('woff2');
  }
  @font-face {
   font-family: 'MonumentalExtendedRegular';
   font-display: swap;
-  src: url('assets/typos/MonumentExtended-Regular.otf') format('woff2');
+  src: url('assets/typos/MonumentExtended-Regular.woff2') format('woff2');
  }
  @font-face {
   font-family: 'PPEditorialNew-Italic';
   font-display: swap;
-  src: url('assets/typos/PPEditorialNew-Italic.otf') format('woff2');
+  src: url('assets/typos/PPEditorialNew-Italic.woff2') format('woff2');
  }
  @font-face {
   font-family: 'PPEditorialNew-Regular';
   font-display: swap;
-  src: url('assets/typos/PPEditorialNew-Regular.otf') format('woff2');
+  src: url('assets/typos/PPEditorialNew-Regular.woff2') format('woff2');
  }
  @font-face {
   font-family: 'PPEditorialNew-Ultralight';
   font-display: swap;
-  src: url('assets/typos/PPEditorialNew-Ultralight.otf') format('woff2');
+  src: url('assets/typos/PPEditorialNew-Ultralight.woff2') format('woff2');
  }
  @font-face {
   font-family: 'PPEditorialNew-UltralightItalic';
   font-display: swap;
-  src: url('assets/typos/PPEditorialNew-UltralightItalic.otf') format('woff2');
+  src: url('assets/typos/PPEditorialNew-UltralightItalic.woff2') format('woff2');
  }
 
 
