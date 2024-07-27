@@ -7,7 +7,7 @@ const DownNav = () => {
   return (
 
     <nav className="text-[#E0DECD] flex flex-col md:flex-row items-center justify-between md:px-10 py-2 md:py-4 px-4 md:px-12 py-4 w-full font-monumental-extended-light">
-  <div className="flex flex-col items-center  md:items-start mb-4 md:mb-0 text-xs md:text-base">
+  <div className="flex flex-col items-center md:items-start mb-4 md:mb-0 text-xs md:text-base">
     <a href="https://www.instagram.com/justgrau_/?hl=es" target="_blank" rel="noopener noreferrer">
       <p className="mb-1 md:mb-0 text-[#E0DECD]">ig @justgrau_</p>
     </a>
