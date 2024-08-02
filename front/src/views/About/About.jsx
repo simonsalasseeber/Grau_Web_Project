@@ -13,7 +13,7 @@ const About = () => {
         <div className="mt-12 md:mt-2 grid grid-cols-1 md:grid-cols-3 gap-8 text-center ">
           <div>
             <h2 className="text-xl font-bold mb-4 font-monumental-extended-regular">GRAU: Crafting Sonic Universes</h2>
-            <p className="mb-4 font-monumental-extended-light">At GRAU, we don't just create music—we craft art. We design immersive soundscapes, where every piece is a carefully curated journey into a universe of sonic excellence. Unlike traditional music houses that churn out generic tracks, our mission is to elevate audio-visual content by infusing it with a distinct, cinematic touch.</p>
+            <p className="mb-4 font-monumental-extended-light">At GRAU, we don't just create music— we craft art. We design immersive soundscapes, where every piece is a carefully curated journey into a universe of sonic excellence. Unlike traditional music houses that churn out generic tracks, our mission is to elevate audio-visual content by infusing it with a distinct, cinematic touch.</p>
             <h3 className="text-lg font-semibold mb-2 font-monumental-extended-regular">Who we are</h3>
             <p className='font-monumental-extended-light'>Our team of composers and sound designers, with over 10 years + of experience in the music industry and with a classical music background, bring a depth of knowledge, fresh perspective and sophistication to every project. We've seen firsthand how broken the traditional industry can be, and we've set out to redefine it. By merging our extensive experience with a fresh, modern approach, we consistently raise the bar in</p>
           </div>
